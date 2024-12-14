@@ -14,6 +14,7 @@ const headerFooterText = `
     <span onclick="selectTopic(this, 'movies/frieren')">Frieren</span>
   </div>
 `;
+let clicked = false;
 
 async function loadMarkdown(reviewLink) {
   try {
