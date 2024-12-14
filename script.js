@@ -1,7 +1,19 @@
 const repoLink = "https://raw.githubusercontent.com/DayKungZa/reviews/main/";
 const textID = "content";
-
-console.log(typeof marked);
+const headerFooterText = `
+  <div class="button-row" id="games">
+    <span onclick="selectTopic(this, 'games/kirbyFL')">Kirby and the Forgotten Land</span> |
+    <span onclick="selectTopic(this, 'games/Xenoblade2TGC')">Xenoblade 2 Torna</span> |
+    <span onclick="selectTopic(this, 'games/Xenoblade3FR')">Xenoblade 3 Future Redeemed</span> |
+    <span onclick="selectTopic(this, 'games/marioluigi2')">Mario and Luigi 2</span> |
+    <span onclick="selectTopic(this, 'games/marioluigi3')">Mario and Luigi 3</span>
+  </div>
+  <div class="button-row" id="movies">
+    <span onclick="selectTopic(this, 'movies/bluegiant')">Blue Giant</span> |
+    <span onclick="selectTopic(this, 'movies/doraemon2024')">Doraemon 2024</span> |
+    <span onclick="selectTopic(this, 'movies/frieren')">Frieren</span>
+  </div>
+`;
 
 async function loadMarkdown(reviewLink) {
   try {
@@ -31,30 +43,26 @@ function scrollToTopic(topicId) {
 }
 
 function selectTopic(span, reviewLink) {
+  if (!clicked){
+    addFooter();
+    clicked = true;
+  }
   // Remove 'active' class from all spans
   document.querySelectorAll('.button-row span').forEach(el => el.classList.remove('active'));
   span.classList.add('active');
   loadMarkdown(reviewLink);
-}
-
-function addHeaderFooter() {
-  const headerFooterElements = document.getElementsByClassName("headerFooter");
-  
-  for (const headerFooter of headerFooterElements) {
-    fetch('headerFooter.html')
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Failed to load headerFooter.html');
-      }
-      return response.text();
-    })
-    .then(htmlContent => {
-      headerFooter.innerHTML = htmlContent;
-    })
-    .catch(error => {
-      console.error('Error loading headerFooter:', error);
-      headerFooter.innerHTML = "Failed to load the header/footer content.";
-    });
+  const targetElement = document.getElementsByClassName("headerFooter")[0];
+  if (targetElement) {
+    targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 }
-addHeaderFooter();
+
+function addHeader() {
+  const header = document.getElementsByClassName("headerFooter")[0];
+  header.innerHTML = headerFooterText;
+}
+function addFooter() {
+  const footer = document.getElementsByClassName("headerFooter")[1];
+  footer.innerHTML = headerFooterText;
+}
+addHeader();
