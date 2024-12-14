@@ -36,3 +36,25 @@ function selectTopic(span, reviewLink) {
   span.classList.add('active');
   loadMarkdown(reviewLink);
 }
+
+function addHeaderFooter() {
+  const headerFooterElements = document.getElementsByClassName("headerFooter");
+  
+  for (const headerFooter of headerFooterElements) {
+    fetch('headerFooter.html')
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Failed to load headerFooter.html');
+      }
+      return response.text();
+    })
+    .then(htmlContent => {
+      headerFooter.innerHTML = htmlContent;
+    })
+    .catch(error => {
+      console.error('Error loading headerFooter:', error);
+      headerFooter.innerHTML = "Failed to load the header/footer content.";
+    });
+  }
+}
+addHeaderFooter();
