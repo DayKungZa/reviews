@@ -39,6 +39,7 @@ async function loadHeaderFooter() {
   }
 }
 
+//func for fetching and converting md file into html
 async function loadMarkdown(reviewLink) {
   try {
       const response = await fetch(`${repoLink}${reviewLink}.md`);
