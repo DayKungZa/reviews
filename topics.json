@@ -1,5 +1,6 @@
 {
   "games": [
+    { "name": "Day's 2021 Remix", "link": "games/remix2021" },
     { "name": "Kirby Forgotten Land", "link": "games/kirbyFL" },
     { "name": "Xenoblade 2 Torna", "link": "games/Xenoblade2TGC" },
     { "name": "Xenoblade 3 Future Redeemed", "link": "games/Xenoblade3FR" },
