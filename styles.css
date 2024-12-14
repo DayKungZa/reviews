@@ -43,10 +43,15 @@ body {
   gap: 10px;
   padding: 20px;
   width: 100%;
-  background-color: #a11f2b;
   font-size: 16px;
   color: inherit;
   cursor: pointer;
+}
+#games {
+  background-color: #a11f2b;
+}
+#movies {
+  background-color: #2500b8;
 }
 .button-row span {
   color: white;
@@ -66,22 +71,9 @@ body {
   width: 100%;
 }
 
-.profile-image {
-  max-width: 100%;
-  height: 200px;
-  border-radius: 50%;
-}
-
-.poster-image {
-  max-width: 60%;
-  border: 5px #f8f9fa;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding-bottom: 10px;
-}
-
 .review-image {
-  max-width: max(5cm, 50%);
+  width: 700px;
+  max-width: 80%;
   border: 5px #f8f9fa;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
