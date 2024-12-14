@@ -44,13 +44,9 @@ body {
   padding: 20px;
   width: 100%;
   background-color: #a11f2b;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  font-size: 16px; /* Set a fixed font size */
-  font-weight: normal; /* Prevent bold or other weight changes */
-  text-decoration: none; /* Remove underlines if inherited */
-  color: inherit; /* Ensure it uses the intended color */
-  cursor: pointer; /* Pointer cursor for a button-like feel */
-  display: inline;
+  font-size: 16px;
+  color: inherit;
+  cursor: pointer;
 }
 .button-row span {
   color: white;
