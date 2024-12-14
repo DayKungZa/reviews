@@ -1,18 +1,27 @@
 const repoLink = "https://raw.githubusercontent.com/DayKungZa/reviews/main/";
 const textID = "content";
 const headerFooterText = `
-  <div class="button-row" id="games">
-    <span onclick="selectTopic(this, 'games/kirbyFL')">Kirby and the Forgotten Land</span> |
+<div class="button-row" id="games"> |
+    <span onclick="selectTopic(this, 'games/kirbyFL')">Kirby Forgotten Land</span> |
     <span onclick="selectTopic(this, 'games/Xenoblade2TGC')">Xenoblade 2 Torna</span> |
     <span onclick="selectTopic(this, 'games/Xenoblade3FR')">Xenoblade 3 Future Redeemed</span> |
+    <span onclick="selectTopic(this, 'games/mariowonder')">Super Mario Wonder</span> |
     <span onclick="selectTopic(this, 'games/marioluigi2')">Mario and Luigi 2</span> |
-    <span onclick="selectTopic(this, 'games/marioluigi3')">Mario and Luigi 3</span>
-  </div>
-  <div class="button-row" id="movies">
+    <span onclick="selectTopic(this, 'games/marioluigi3')">Mario and Luigi 3</span> |
+    <span onclick="selectTopic(this, 'games/ittakestwo')">It Takes Two</span> |
+    <span onclick="selectTopic(this, 'games/celeste')">Celeste</span> |
+    <span onclick="selectTopic(this, 'games/metroidzm')">Metroid Zero Mission</span> |
+    <span onclick="selectTopic(this, 'games/metroidp1')">Metroid Prime Remastered</span> |
+
+</div>
+<div class="button-row" id="movies"> |
     <span onclick="selectTopic(this, 'movies/bluegiant')">Blue Giant</span> |
-    <span onclick="selectTopic(this, 'movies/doraemon2024')">Doraemon 2024</span> |
     <span onclick="selectTopic(this, 'movies/frieren')">Frieren</span>
-  </div>
+    <span onclick="selectTopic(this, 'movies/doraemon2024')">Doraemon 2024</span> |
+    <span onclick="selectTopic(this, 'movies/panda4')">Kung Fu Panda 4</span>
+    <span onclick="selectTopic(this, 'movies/lahnma')">หลานม่า</span> |
+    <span onclick="selectTopic(this, 'movies/whiplash')">Whiplash</span> |
+</div>
 `;
 let clicked = false;
 
@@ -52,7 +61,7 @@ function selectTopic(span, reviewLink) {
   document.querySelectorAll('.button-row span').forEach(el => el.classList.remove('active'));
   span.classList.add('active');
   loadMarkdown(reviewLink);
-  const targetElement = document.getElementsByClassName("headerFooter")[0];
+  const targetElement = document.getElementById("content");
   if (targetElement) {
     targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
