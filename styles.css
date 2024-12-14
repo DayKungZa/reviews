@@ -46,15 +46,11 @@ body {
   background-color: #a11f2b;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-.button-row img {
-  width: max(12%, 120px);
-  height: auto;
-  border: 2px solid #ccc;
-  border-radius: 3px;
-  cursor: pointer;
+.button-row span {
+  color: white;
   transition: transform 0.2s ease, border-color 0.2s ease, filter 0.2s ease;
 }
-.button-row img:hover {
+.button-row span:hover {
   filter: brightness(0.8);
 }
 
