@@ -4,12 +4,14 @@
     { "name": "Xenoblade 2 Torna", "link": "games/Xenoblade2TGC" },
     { "name": "Xenoblade 3 Future Redeemed", "link": "games/Xenoblade3FR" },
     { "name": "Super Mario Wonder", "link": "games/mariowonder" },
+    { "name": "Mario and Luigi 1", "link": "games/marioluigi1" },
     { "name": "Mario and Luigi 2", "link": "games/marioluigi2" },
     { "name": "Mario and Luigi 3", "link": "games/marioluigi3" },
     { "name": "It Takes Two", "link": "games/ittakestwo" },
     { "name": "Celeste", "link": "games/celeste" },
     { "name": "Metroid Zero Mission", "link": "games/metroidzm" },
-    { "name": "Metroid Prime Remastered", "link": "games/metroidp1" }
+    { "name": "Metroid Prime Remastered", "link": "games/metroidp1" },
+    { "name": "Fire Emblem Engage", "link": "games/feengage" }
   ],
   "movies": [
     { "name": "Blue Giant", "link": "movies/bluegiant" },
