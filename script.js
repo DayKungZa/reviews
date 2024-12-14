@@ -1,10 +1,11 @@
-const readmeLink = "https://raw.githubusercontent.com/DayKungZa/CEDTReview/main/README.md";
+const repoLink = "https://raw.githubusercontent.com/DayKungZa/reviews/main/";
 const textID = "content";
 
 console.log(typeof marked);
-async function loadMarkdown() {
+
+async function loadMarkdown(reviewLink) {
   try {
-      const response = await fetch(readmeLink);
+      const response = await fetch(`${repoLink}${reviewLink}`);
       if (!response.ok) throw new Error(`Failed to fetch README.md: ${response.statusText}`);
       
       const markdown = await response.text();
@@ -25,5 +26,3 @@ function scrollToTopic(topicId) {
     console.error(`Element with id '${topicId}' not found.`);
   }
 }
-
-loadMarkdown();
