@@ -12,7 +12,7 @@ async function loadMarkdown(reviewLink) {
       const readmeText = marked.parse ? marked.parse(markdown) : marked(markdown);
       
       document.getElementById(textID).innerHTML = `
-        <img src="${reviewLink}.png" class="slide-image"></img>
+        <img src="${reviewLink}.png" class="review-image"></img>
         ${readmeText}
       `;
   } catch (error) {
@@ -28,4 +28,11 @@ function scrollToTopic(topicId) {
   } else {
     console.error(`Element with id '${topicId}' not found.`);
   }
+}
+
+function selectTopic(span, reviewLink) {
+  // Remove 'active' class from all spans
+  document.querySelectorAll('.button-row span').forEach(el => el.classList.remove('active'));
+  span.classList.add('active');
+  loadMarkdown(reviewLink);
 }

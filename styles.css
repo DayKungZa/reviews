@@ -45,6 +45,12 @@ body {
   width: 100%;
   background-color: #a11f2b;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 16px; /* Set a fixed font size */
+  font-weight: normal; /* Prevent bold or other weight changes */
+  text-decoration: none; /* Remove underlines if inherited */
+  color: inherit; /* Ensure it uses the intended color */
+  cursor: pointer; /* Pointer cursor for a button-like feel */
+  display: inline;
 }
 .button-row span {
   color: white;
@@ -52,6 +58,9 @@ body {
 }
 .button-row span:hover {
   filter: brightness(0.8);
+}
+.button-row span.active {
+  color: black;
 }
 
 .image-container {
@@ -75,7 +84,13 @@ body {
   padding-bottom: 10px;
 }
 
-
+.review-image {
+  max-width: max(5cm, 50%);
+  border: 5px #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  gap: 20px;
+}
 
 .slide-image {
   max-width: 50%;
