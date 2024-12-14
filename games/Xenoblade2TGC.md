@@ -10,7 +10,7 @@ Gameplay ในด้านการต่อสู้นั้นค่อน�
 
 เพลงประกอบ is jazzy banger masterpiece.
 
-# Overall 9.1/10
+# Overall 91/100
 ## Go play this game and DLC
 
 written 21/7/2023
