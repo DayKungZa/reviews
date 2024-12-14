@@ -1,0 +1,23 @@
+{
+  "games": [
+    { "name": "Kirby Forgotten Land", "link": "games/kirbyFL" },
+    { "name": "Xenoblade 2 Torna", "link": "games/Xenoblade2TGC" },
+    { "name": "Xenoblade 3 Future Redeemed", "link": "games/Xenoblade3FR" },
+    { "name": "Super Mario Wonder", "link": "games/mariowonder" },
+    { "name": "Mario and Luigi 2", "link": "games/marioluigi2" },
+    { "name": "Mario and Luigi 3", "link": "games/marioluigi3" },
+    { "name": "It Takes Two", "link": "games/ittakestwo" },
+    { "name": "Celeste", "link": "games/celeste" },
+    { "name": "Metroid Zero Mission", "link": "games/metroidzm" },
+    { "name": "Metroid Prime Remastered", "link": "games/metroidp1" }
+  ],
+  "movies": [
+    { "name": "Blue Giant", "link": "movies/bluegiant" },
+    { "name": "Frieren", "link": "movies/frieren" },
+    { "name": "Doraemon 2024", "link": "movies/doraemon2024" },
+    { "name": "Kung Fu Panda 4", "link": "movies/panda4" },
+    { "name": "หลานม่า", "link": "movies/lahnma" },
+    { "name": "Whiplash", "link": "movies/whiplash" },
+    { "name": "Drifting Home", "link": "movies/driftinghome" }
+  ]
+}
