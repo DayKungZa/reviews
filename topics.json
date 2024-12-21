@@ -20,6 +20,7 @@
     { "name": "Kung Fu Panda 4", "link": "movies/panda4" },
     { "name": "หลานม่า", "link": "movies/lahnma" },
     { "name": "Whiplash", "link": "movies/whiplash" },
-    { "name": "Drifting Home", "link": "movies/driftinghome" }
+    { "name": "Drifting Home", "link": "movies/driftinghome" },
+    { "name": "DanDaDan", "link": "movies/dandadan" }
   ]
 }
