@@ -12,7 +12,8 @@
     { "name": "It Takes Two", "link": "games/ittakestwo" },
     { "name": "Celeste", "link": "games/celeste" },
     { "name": "Metroid Prime Remastered", "link": "games/metroidp1" },
-    { "name": "Fire Emblem Engage", "link": "games/feengage" }
+    { "name": "Fire Emblem Engage", "link": "games/feengage" },
+    { "name": "Balatro", "link": "games/balatro" }
   ],
   "movies": [
     { "name": "Blue Giant", "link": "movies/bluegiant" },
